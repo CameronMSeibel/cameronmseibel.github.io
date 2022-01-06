@@ -1,0 +1,17 @@
+.dark-background{
+    background-color: #242423;
+}
+
+.light{
+    color: #E8EDDF;
+}
+
+header{
+    height: 100px;
+    line-height: 100px;
+}
+
+h1{
+    vertical-align: middle;
+    display: inline-block;
+}
