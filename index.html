@@ -7,6 +7,7 @@
         
         <!-- UIkit CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
+        <link rel="stylesheet" href="resources/style.css"/>
 
         <!-- UIkit JS -->
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
@@ -15,13 +16,13 @@
         <title>Cameron's Portfolio</title>
     </head>
     <body>
-        <header>
-            <h1></h1>
+        <header class="dark-background">
+            <h1 class="light uk-margin-medium-left">Welcome to my portfolio!</h1>
         </header>
-        <div uk-grid>
-            <main>
+        <div uk-grid class="uk-background-muted uk-padding-large">
+            <main class="uk-width-auto">
                 <div>
-                    <div class="uk-card uk-card-default">
+                    <div class="uk-card uk-card-default uk-width-xlarge@m uk-margin-medium-bottom">
                         <div class="uk-card-media-top uk-cover-container">
                             <img src="resources/brewtrek_screenshot.png" alt="" uk-cover>
                             <canvas width="600" height="400"></canvas>
@@ -29,13 +30,15 @@
                         <div class="uk-card-body">
                             <h3 class="uk-card-title">BrewTrek</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                        <div class="uk-card-footer uk-flex uk-flex-around">
                             <a href="http://">Deployed</a>
                             <a href="http://">GitHub</a>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div class="uk-card uk-card-default">
+                    <div class="uk-card uk-card-default uk-width-xlarge@m uk-margin-medium-bottom">
                         <div class="uk-card-media-top uk-cover-container">
                             <img src="resources/weatherdashboard_screenshot.png" alt="" uk-cover>
                             <canvas width="600" height="400"></canvas>
@@ -43,44 +46,49 @@
                         <div class="uk-card-body">
                             <h3 class="uk-card-title">Weather Dashboard</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                        <div class="uk-card-footer uk-flex uk-flex-around">
                             <a href="http://">Deployed</a>
                             <a href="http://">GitHub</a>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div class="uk-card uk-card-default">
+                    <div class="uk-card uk-card-default uk-width-xlarge@m">
                         <div class="uk-card-media-top">
                             <img src="resources/scheduler_screenshot.png" alt="">
                         </div>
                         <div class="uk-card-body">
                             <h3 class="uk-card-title">Workday Scheduler</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            
+                        </div>
+                        <div class="uk-card-footer uk-flex uk-flex-around">
                             <a href="http://">Deployed</a>
                             <a href="http://">GitHub</a>
                         </div>
                     </div>
                 </div>
             </main>
-            <aside>
-                <div class="uk-card uk-card-default">
+            <aside class="uk-width-expand@m">
+                <div class="uk-card uk-card-default uk-width-large@m">
                     <div class="uk-card-header">
                         <div class="uk-grid-small uk-flex-middle" uk-grid>
                             <div class="uk-width-auto">
                                 <img class="uk-border-circle" width="40" height="40" src="resources/beautiful_headshot.png">
                             </div>
-                            <div class="uk-width-expand">
+                            <div class="uk-width-auto">
                                 <h3 class="uk-card-title uk-margin-remove-bottom">About Me</h3>
-                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
                             </div>
                         </div>
                     </div>
                     <div class="uk-card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <p>Hello! My name is Cameron Seibel. I am currently a student of the UW Programming Bootcamp.</p>
                     </div>
                     <div class="uk-card-footer uk-flex uk-flex-around">
                         <a href="https://github.com/CameronMSeibel/" class="uk-button uk-button-text">GitHub</a>
                         <a href="https://www.linkedin.com/in/cmseibel/" class="uk-button uk-button-text">LinkedIn</a>
+                        <a href="https://docs.google.com/document/d/1tpScWhgPRGKOChlQGGJWByVXf0GP6j2c3x0-ya1dGtY/edit?usp=sharing" class="uk-button uk-button-text">Resume</a>
                     </div>
                 </div>
             </aside>
