@@ -11,7 +11,7 @@ function Bio({desc, email, phone, github, linkedin, resume, headshot}){
                         image={headshot.src}
                         alt={headshot.alt}
                     />
-                    <CardContent>
+                    <CardContent sx={{margin: "0 1rem", padding: "1rem"}}>
                         <Typography gutterBottom variant="h5" component="h2">
                             About Me
                         </Typography>
@@ -29,12 +29,12 @@ function Bio({desc, email, phone, github, linkedin, resume, headshot}){
                                 <Typography>Email: <Link href={`tel:${phone}`}>{phone}</Link></Typography>
                             </ListItem>
                         </List>
+                        <Stack direction="row" justifyContent="center">
+                            <Button href={github} size="small">GitHub</Button>
+                            <Button href={linkedin} size="small">LinkedIn</Button>
+                            <Button href={resume} size="small">Resume</Button>
+                        </Stack>
                     </CardContent>
-                    <Stack direction="row" justifyContent="center">
-                        <Button href={github} size="small">GitHub</Button>
-                        <Button href={linkedin} size="small">LinkedIn</Button>
-                        <Button href={resume} size="small">Resume</Button>
-                    </Stack>
                 </Card>
             </Container>
         </Grid>);

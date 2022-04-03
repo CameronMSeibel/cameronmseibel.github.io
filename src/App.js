@@ -18,7 +18,10 @@ function App(){
     const [darkMode, toggleDarkMode] = useState(initialThemeState());
     const theme = createTheme({
         palette: {
-            mode: darkMode ? "dark" : "light"
+            mode: darkMode ? "dark" : "light",
+            background: {
+                default: darkMode ? "#121212" : "#DCDCDC"
+            }
         }
     });
 
