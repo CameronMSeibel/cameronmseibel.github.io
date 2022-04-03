@@ -8,7 +8,7 @@ import { Box, Grid } from "@mui/material";
 
 function Portfolio({StyleToggle}){
     return (
-    <Box>
+    <Box sx={{margin: "0 2rem"}}>
         <Header StyleToggle={StyleToggle}/>
         <Grid 
             container 

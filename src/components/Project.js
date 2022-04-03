@@ -8,18 +8,18 @@ function Project({name, desc, image, links}){
             image={image.src}
             alt={image.alt}
         />
-        <CardContent>
+        <CardContent sx={{margin: "0 1rem"}}>
             <Typography variant="h5" component="h2" gutterBottom>
                 {name}
             </Typography>
-            <Typography>
+            <Typography gutterBottom>
                 {desc}
             </Typography>
+            <Stack direction="row" justifyContent="center">
+                <Button href={links.deployed} size="small">Deployed</Button>
+                <Button href={links.github} size="small">GitHub</Button>
+            </Stack>
         </CardContent>
-        <Stack direction="row" justifyContent="center">
-            <Button href={links.deployed} size="small">Deployed</Button>
-            <Button href={links.github} size="small">GitHub</Button>
-        </Stack>
     </Card>);
 }
 
