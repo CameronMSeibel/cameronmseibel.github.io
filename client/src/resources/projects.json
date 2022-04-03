@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Watch List",
+        "desc": "I hate this",
+        "image": {
+            "src": "/images/catchup_screenshot.webp",
+            "alt": "An image"
+        },
+        "links": {
+            "deployed": "/",
+            "github": "/"
+        }
+    }
+]
