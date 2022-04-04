@@ -1,5 +1,6 @@
 import { Button, Card, CardContent, CardMedia, Container, Grid, Link, List, ListItem, Stack, Typography } from "@mui/material";
 import React from "react";
+import { phoneNumFormat } from "../utils";
 
 function Bio({desc, email, phone, github, linkedin, resume, headshot}){
     return (
@@ -23,16 +24,16 @@ function Bio({desc, email, phone, github, linkedin, resume, headshot}){
                         </Typography>
                         <List>
                             <ListItem>
-                                <Typography>Email: <Link href={`mailto:${email}`}>{email}</Link></Typography>
+                                <Typography>Email: <Link target="_blank" href={`mailto:${email}`}>{email}</Link></Typography>
                             </ListItem>
                             <ListItem>
-                                <Typography>Email: <Link href={`tel:${phone}`}>{phone}</Link></Typography>
+                                <Typography>Phone: <Link target="_blank" href={`tel:${phone}`}>{phoneNumFormat(phone)}</Link></Typography>
                             </ListItem>
                         </List>
                         <Stack direction="row" justifyContent="center">
-                            <Button href={github} size="small">GitHub</Button>
-                            <Button href={linkedin} size="small">LinkedIn</Button>
-                            <Button href={resume} size="small">Resume</Button>
+                            <Button target="_blank" href={github} size="small">GitHub</Button>
+                            <Button target="_blank" href={linkedin} size="small">LinkedIn</Button>
+                            <Button target="_blank" href={resume} size="small">Resume</Button>
                         </Stack>
                     </CardContent>
                 </Card>

@@ -16,8 +16,20 @@ function Project({name, desc, image, links}){
                 {desc}
             </Typography>
             <Stack direction="row" justifyContent="center">
-                <Button href={links.deployed} size="small">Deployed</Button>
-                <Button href={links.github} size="small">GitHub</Button>
+                <Button 
+                    target="_blank"
+                    href={links.deployed} 
+                    size="small"
+                >
+                    Deployed
+                </Button>
+                <Button 
+                    target="_blank"
+                    href={links.github} 
+                    size="small"
+                >
+                    GitHub
+                </Button>
             </Stack>
         </CardContent>
     </Card>);
