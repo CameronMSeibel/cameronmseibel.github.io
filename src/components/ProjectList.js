@@ -5,10 +5,10 @@ import Project from "./Project";
 function ProjectList({projects}){
     return (
         <Grid item xs={12} md={6}>
-            <Paper component="header" sx={{margin: "0 auto 2rem", maxWidth: "sm", padding: "2rem"}}>
+            <Paper component="header" sx={{margin: "1rem auto 2rem", maxWidth: "sm", padding: "2rem"}}>
                 <Typography
                     variant="h3"
-                    component="h1"
+                    component="h2"
                     textAlign="center"
                 >
                     Work

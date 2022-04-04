@@ -9,7 +9,7 @@ function Project({name, desc, image, links}){
             alt={image.alt}
         />
         <CardContent sx={{margin: "0 1rem"}}>
-            <Typography variant="h5" component="h2" gutterBottom>
+            <Typography variant="h5" component="h3" gutterBottom>
                 {name}
             </Typography>
             <Typography gutterBottom>
