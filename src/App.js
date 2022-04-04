@@ -31,6 +31,7 @@ function App(){
                     toggleDarkMode(!darkMode);
                     console.log(darkMode);
                 }}
+                sx={{display: {xs: "none", sm: "block"}}}
             >
                 {darkMode ? "Use Light Mode" : "Use Dark Mode"}
             </Button>

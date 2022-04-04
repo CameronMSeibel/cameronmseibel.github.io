@@ -6,6 +6,7 @@ function Header({StyleToggle}){
             <Typography
                 variant="h3"
                 component="h1"
+                textAlign={{xs: "center", sm: "inherit"}}
             >
                 Cameron Seibel
             </Typography>

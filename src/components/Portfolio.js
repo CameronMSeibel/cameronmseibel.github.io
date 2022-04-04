@@ -13,7 +13,6 @@ function Portfolio({StyleToggle}){
         <Grid 
             container 
             spacing={3}
-            direction="row-reverse"
             justifyContent="center"
         >
             <Bio {...contact}/>
