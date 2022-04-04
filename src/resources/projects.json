@@ -4,7 +4,7 @@
         "desc": "This was a colaborative project in designing a full-stack web application designed to track media as a watch list. Users could create their own list and add media to catch up on. Languages and technologies used include Node JS, with express and sequelize, and handlebars. It is styled with Bootstrap.",
         "image": {
             "src": "/images/catchup_screenshot.webp",
-            "alt": "An image"
+            "alt": "A webpage displays titles from various media. They can be added to a list to be referenced later."
         },
         "links": {
             "deployed": "https://catch-up-inator.herokuapp.com/",
@@ -16,7 +16,7 @@
         "desc": "BrewTrek is a colaborative project that combines a love of trivia and breweries. Languages and technologies used include JavaScript with AJAX, HTML, and CSS with styling using the Bulma framework.",
         "image": {
             "src": "/images/brewtrek_screenshot.webp",
-            "alt": "An image"
+            "alt": "A logo reading 'brewtrek'."
         },
         "links": {
             "deployed": "https://kimberlym4488.github.io/brewtrek/",
@@ -28,7 +28,7 @@
         "desc": "This is a full stack application that offers classic blog functionality, allowing for users to post and respond to blogs. Languages and technologies Node JS, with express and sequelize, and handlebars. It is styled with Bootstrap.",
         "image": {
             "src": "/images/techblog_screenshot.webp",
-            "alt": "An image"
+            "alt": "A webpage displays a list of short tech-adjacent blog posts."
         },
         "links": {
             "deployed": "https://cmseibel-tech-blog.herokuapp.com/",
