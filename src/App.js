@@ -17,6 +17,13 @@ function App(){
 
     const [darkMode, toggleDarkMode] = useState(initialThemeState());
     const theme = createTheme({
+        components: {
+            MuiLink: {
+                defaultProps: {
+                    target: "_blank" // Open a new window for links by default
+                }
+            }
+        },
         palette: {
             mode: darkMode ? "dark" : "light",
             background: {

@@ -2,7 +2,7 @@ import { Button, Card, CardContent, CardMedia, Stack, Typography } from "@mui/ma
 import React from "react";
 
 function Project({name, desc, image, links}){
-    return (<Card sx={{maxWidth: "sm", marginBottom: "2rem"}}>
+    return (<Card sx={{maxWidth: "sm", margin: "2rem auto"}}>
         <CardMedia
             component="img"
             image={image.src}
