@@ -1,6 +1,5 @@
-import { Avatar, Button, Card, CardContent, Grid, Link, List, ListItem, Stack, Typography } from "@mui/material";
+import { Avatar, Card, CardContent, Grid, Typography } from "@mui/material";
 import React from "react";
-import { phoneNumFormat } from "../utils";
 
 function Bio({desc, email, phone, github, linkedin, resume, headshot}){
     return (

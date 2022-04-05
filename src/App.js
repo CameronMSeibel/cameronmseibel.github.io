@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Portfolio from "./components/Portfolio";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
-import {Button} from "@mui/material"
+import { Switch, FormControlLabel } from "@mui/material"
 
 
 
@@ -33,15 +33,19 @@ function App(){
     });
 
     function StyleToggle(){
-        return <Button
-                onClick={() => {
-                    toggleDarkMode(!darkMode);
-                    console.log(darkMode);
-                }}
-                sx={{display: {xs: "none", sm: "block"}}}
-            >
-                {darkMode ? "Use Light Mode" : "Use Dark Mode"}
-            </Button>
+        return (
+            <FormControlLabel 
+                control={<Switch 
+                    defaultChecked={darkMode}
+                    onClick={() => {
+                        toggleDarkMode(!darkMode);
+                        console.log(darkMode);
+                    }}
+                />}
+                label="Dark Mode"
+            />
+            
+        );
     }
 
     return (
