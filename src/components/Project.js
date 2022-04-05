@@ -1,4 +1,4 @@
-import { Button, Card, CardContent, CardMedia, Fade, Stack, Typography } from "@mui/material";
+import { Button, Card, CardContent, CardMedia, Slide, Stack, Typography } from "@mui/material";
 import VisSensor from "react-visibility-sensor";
 import React, {useState} from "react";
 
@@ -6,39 +6,39 @@ function Project({name, desc, image, links}){
     const [active, setActive] = useState(false);
     return (
         <VisSensor onChange={(isVisible) => isVisible ? setActive(true) : null}>
-            <Fade in={active}>
-            <Card sx={{maxWidth: "sm", margin: "2rem auto"}}>
-                <CardMedia
-                    component="img"
-                    image={image.src}
-                    alt={image.alt}
-                />
-                <CardContent sx={{margin: "0 1rem"}}>
-                    <Typography variant="h5" component="h3" gutterBottom>
-                        {name}
-                    </Typography>
-                    <Typography gutterBottom>
-                        {desc}
-                    </Typography>
-                    <Stack direction="row" justifyContent="center">
-                        <Button 
-                            target="_blank"
-                            href={links.deployed} 
-                            size="small"
-                        >
-                            Deployed
-                        </Button>
-                        <Button 
-                            target="_blank"
-                            href={links.github} 
-                            size="small"
-                        >
-                            GitHub
-                        </Button>
-                    </Stack>
-                </CardContent>
-            </Card>
-            </Fade>
+            <Slide in={active} direction="up" timeout={500}>
+                <Card sx={{maxWidth: "sm", margin: "2rem auto"}}>
+                    <CardMedia
+                        component="img"
+                        image={image.src}
+                        alt={image.alt}
+                    />
+                    <CardContent sx={{margin: "0 1rem"}}>
+                        <Typography variant="h5" component="h3" gutterBottom>
+                            {name}
+                        </Typography>
+                        <Typography gutterBottom>
+                            {desc}
+                        </Typography>
+                        <Stack direction="row" justifyContent="center">
+                            <Button 
+                                target="_blank"
+                                href={links.deployed} 
+                                size="small"
+                            >
+                                Deployed
+                            </Button>
+                            <Button 
+                                target="_blank"
+                                href={links.github} 
+                                size="small"
+                            >
+                                GitHub
+                            </Button>
+                        </Stack>
+                    </CardContent>
+                </Card>
+            </Slide>
         </VisSensor>
     );
 }

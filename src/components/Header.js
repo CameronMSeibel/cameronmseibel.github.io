@@ -1,4 +1,4 @@
-import { IconButton, Paper, Popover, Typography } from "@mui/material";
+import { IconButton, List, ListItem, Paper, Popover, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu"
 import React, {useState} from "react";
 
@@ -15,16 +15,14 @@ function Header({StyleToggle}){
             setAnchor(null);
         }
 
-        const open = Boolean(anchorElement);
-        const id = open ? "menu-popover" : undefined;
+        let open = Boolean(anchorElement);
 
         return(
             <div>
-                <IconButton aria-describedby={id} onClick={handleClick}>
+                <IconButton onClick={handleClick}>
                     <MenuIcon />
                 </IconButton>
                 <Popover
-                    id={id}
                     open={open}
                     anchorEl={anchorElement}
                     onClose={handleClose}
@@ -36,18 +34,19 @@ function Header({StyleToggle}){
                         vertical: "top",
                         horizontal: "right"
                     }}
-                    sx={{
-                        padding: "10rem"
-                    }}
                 >
-                    <StyleToggle />
+                    <List>
+                        <ListItem>
+                            <StyleToggle onClick={handleClick} />
+                        </ListItem>
+                    </List>
                 </Popover>
             </div>
         );
     }
 
     return (
-        <Paper component="header" sx={{display: "flex", justifyContent: "space-between", margin: "2rem 0", padding: "2rem"}}>
+        <Paper component="header" sx={{display: "flex", alignItems: "center", justifyContent: "space-between", margin: "2rem 0", padding: "2rem"}}>
             <Typography
                 variant="h3"
                 component="h1"

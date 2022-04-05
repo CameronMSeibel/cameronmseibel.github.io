@@ -12,6 +12,7 @@ function Footer({phone, email, linkedin, github, resume}){
                 variant="h4"
                 component="h2"
                 marginBottom="1rem"
+                id="contact"
             >
                 Contact Me
             </Typography>
