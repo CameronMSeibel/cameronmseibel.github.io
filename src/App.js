@@ -22,6 +22,11 @@ function App(){
                 defaultProps: {
                     target: "_blank" // Open a new window for links by default
                 }
+            },
+            MuiIconButton: {
+                defaultProps: {
+                    target: "_blank" // IconButtons don't count as links.
+                }
             }
         },
         palette: {

@@ -13,13 +13,11 @@ function Portfolio({StyleToggle}){
         <Grid 
             container
             justifyContent="center"
-            position="relative"
         >
-            <Grid item xs={12} width="100vw" position="absolute">
+            <Grid item xs={12} width="100vw" minHeight="100vh">
                 <Header StyleToggle={StyleToggle}/>
-                
+                <Bio {...aboutMe}/>
             </Grid>
-            <Bio {...aboutMe}/>
             <ProjectList projects={projects}/>
             <Grid item xs={12}>
                 <Footer {...aboutMe} />
