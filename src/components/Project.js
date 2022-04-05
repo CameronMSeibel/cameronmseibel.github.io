@@ -5,8 +5,11 @@ import React, {useState} from "react";
 function Project({name, desc, image, links}){
     const [active, setActive] = useState(false);
     return (
-        <VisSensor onChange={(isVisible) => isVisible ? setActive(true) : null}>
-            <Fade in={active} timeout={500}>
+        <VisSensor 
+            onChange={(isVisible) => isVisible ? setActive(true) : null}
+            partialVisibility={true}
+        >
+            <Fade in={active} timeout={1000}>
                 <Card sx={{maxWidth: "sm", margin: "2rem auto"}}>
                     <CardMedia
                         component="img"
