@@ -1,4 +1,4 @@
-import { Button, Card, CardContent, CardMedia, Slide, Stack, Typography } from "@mui/material";
+import { Button, Card, CardContent, CardMedia, Fade, Stack, Typography } from "@mui/material";
 import VisSensor from "react-visibility-sensor";
 import React, {useState} from "react";
 
@@ -6,7 +6,7 @@ function Project({name, desc, image, links}){
     const [active, setActive] = useState(false);
     return (
         <VisSensor onChange={(isVisible) => isVisible ? setActive(true) : null}>
-            <Slide in={active} direction="up" timeout={500}>
+            <Fade in={active} timeout={500}>
                 <Card sx={{maxWidth: "sm", margin: "2rem auto"}}>
                     <CardMedia
                         component="img"
@@ -38,7 +38,7 @@ function Project({name, desc, image, links}){
                         </Stack>
                     </CardContent>
                 </Card>
-            </Slide>
+            </Fade>
         </VisSensor>
     );
 }
