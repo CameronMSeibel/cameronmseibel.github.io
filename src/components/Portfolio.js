@@ -10,15 +10,21 @@ import Footer from "./Footer";
 function Portfolio({StyleToggle}){
     return (
     <Box sx={{margin: "0 2rem"}}>
-        <Header StyleToggle={StyleToggle}/>
         <Grid 
             container
             justifyContent="center"
+            position="relative"
         >
+            <Grid item xs={12} width="100vw" position="absolute">
+                <Header StyleToggle={StyleToggle}/>
+                
+            </Grid>
             <Bio {...aboutMe}/>
             <ProjectList projects={projects}/>
+            <Grid item xs={12}>
+                <Footer {...aboutMe} />
+            </Grid>
         </Grid>
-        <Footer {...aboutMe} />
     </Box>);
 }
 
