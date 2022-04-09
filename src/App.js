@@ -40,7 +40,8 @@ function App(){
     function StyleToggle(){
         return (
             <FormControlLabel 
-                control={<Switch 
+                control={<Switch
+                    aria-label="Toggle Dark Mode"
                     defaultChecked={darkMode}
                     onClick={() => {
                         toggleDarkMode(!darkMode);
